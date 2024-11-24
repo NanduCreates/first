@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form>
+        <label for="name">USERNAME : </label>
+        <input type="text" id="name" name="name">
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password">
+        <label for="gender"> gender : 
+        <input type="radio" name="gender" id="male">male
+        <input type="radio" name="gender" id="female">female
+        </label>
+        <button id="butt">submit</button>
+    </form>
+    <script>
+        document.getElementById("butt").addEventListener("click",()=>{
+            val = document.getElementById("name").value;
+            if(val.length>6){
+                alert("name should be below 25");;
+            }
+            alert("registration is successfully");
+        })
+    </script>
+</body>
+</html>
